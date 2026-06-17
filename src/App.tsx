@@ -1,3 +1,4 @@
+import LandingPage from './pages/LandingPage'
 import { useState } from 'react'
 import { Plus, Briefcase } from 'lucide-react'
 import { useJobStore } from './store'
@@ -25,7 +26,9 @@ export default function App() {
   )
 
   return (
-    <div className="min-h-screen bg-[#0A0F1E]">
+    <>
+    <LandingPage />
+    <div className="hidden min-h-screen bg-[#0A0F1E]">
       <Header
         lang={store.lang}
         setLang={store.setLang}
@@ -111,5 +114,6 @@ export default function App() {
         />
       )}
     </div>
+    </>
   )
 }
