@@ -1,0 +1,34 @@
+@import "tailwindcss";
+
+body {
+  margin: 0;
+  background-color: #0A0F1E;
+  color: #E2E8F0;
+  font-family: 'Inter', system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+.input-field {
+  width: 100%;
+  background: #1A2744;
+  border: 1px solid #1E2D4A;
+  border-radius: 8px;
+  padding: 8px 12px;
+  color: #E2E8F0;
+  font-size: 14px;
+  outline: none;
+  transition: border-color 0.15s;
+  display: block;
+}
+
+.input-field:focus {
+  border-color: #3B82F6;
+}
+
+.input-field option {
+  background: #0F1629;
+}
